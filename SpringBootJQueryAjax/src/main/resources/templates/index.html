@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+  
+<html>
+<head>
+      <title>Spring Boot AJAX</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="/js/postrequest.js"></script>
+      <script src="/js/getrequest.js"></script>
+      <script src="/js/putrequest.js"></script>
+      <script src="/js/patchrequest.js"></script>
+      <script src="/js/deleterequest.js"></script>
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" />
+</head>
+<body>
+<div class="container">
+    <h1>POST-GET</h1>      
+    <div id="postdiv">
+        <form id="customerForm">
+            <label>FirstName</label>
+            <input type="text" id="firstname" class="form-control"/>
+            <label>LastName</label>
+            <input type="text" id="lastname" class="form-control"/>
+            <label>trabajo</label>
+            <input type="text" id="trabajo" class="form-control"/>
+            <label>find Customer</label>
+            <input type="text" id="newName" class="form-control"/>
+            <button type="submit" id="postBtn" class="btn btn-primary">Post Submit</button>
+            <button type="submit" id="putBtn" class="btn btn-primary">Put  Submit</button>
+            <button type="submit" id="patchBtn" class="btn btn-primary">Patch  Submit</button>
+            <button type="submit" id="deleteBtn" class="btn btn-primary">delete  Submit</button>
+        </form>
+    </div>
+    <div id="postResultDiv">
+    </div>
+    <br/>
+    <div id="getdiv">
+        <button id="getBtn" >Get All</button>
+    </div>
+    <div id="getResultDiv">
+        <ul class="list-group">
+        </ul>
+    </div>
+      
+</div>
+</body>
+</html>
